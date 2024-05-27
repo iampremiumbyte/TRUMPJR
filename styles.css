@@ -4,10 +4,8 @@
     box-sizing: border-box;
 }
 
-
-
 body {
-    background-color: #88CB00;
+    background-color: #1F4983;
     font-family: "Poetsen One", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -18,7 +16,7 @@ body {
 .item,
 h2,
 p {
-    color: #000000;
+    color: #fff;
     font-size: 1.5em;
 }
 
@@ -35,16 +33,56 @@ p {
 
 .banner-wrap {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    margin: 0 auto;
+    background-color: #EB3331;
 }
 
 .banner-wrap p {
     padding: 1em;
 }
 
+.banner-wrap .title {
+    font-size: 3em;
+    color: #fff;
+}
+
+.banner-wrap .tag {
+    font-size: 4em;
+    color: #1F4983;
+}
+
 .banner-wrap img {
-    width: 100%;
-    margin: 1em 0;
+    width: 50%;
+    /* margin: 1em 0; */
+}
+
+.about {
+    background-color: #1F4983;
+    color: #fff;
+    padding: 2em;
+}
+
+.about .content {
+    display: flex;
+    text-align: left;
+    gap: 2em;
+}
+
+.about .content h2 {
+    font-size: 3em;
+    text-align: center;
+    margin: .5em auto;
+}
+
+.about .content p {
+    font-size: 1em;
+    line-height: 2em;
+}
+
+.about img {
+    width: 400px;
 }
 
 .socials {
@@ -92,6 +130,7 @@ p {
 
 .image-no-content img {
     width: 100%;
+    margin-top: 2em;
 }
 
 @media screen and (max-width: 768px) {
@@ -100,7 +139,7 @@ p {
     .item,
     h2,
     p {
-        color: #000000;
+        color: #fff;
         font-size: 1.3em;
     }
 
@@ -112,4 +151,32 @@ p {
     .ca-wrap {
         font-size: .7em;
     }
+
+
+    .banner-wrap {
+        flex-direction: column;
+    }
+
+    .banner-wrap p,
+    .banner-wrap .title,
+    .banner-wrap .tag {
+        font-size: 1.3em;
+    }
+
+    .banner-wrap p {
+        padding: 0em;
+    }
+
+    .about .content h2 {
+        font-size: 1.3em;
+    }
+
+    .about .content {
+        flex-direction: column;
+    }
+
+    .about img {
+        width: 100%;
+    }
+
 }
