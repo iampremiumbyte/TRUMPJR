@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: #88CB00;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.ca-wrap,
+.item,
+h2,
+p {
+    color: #000000;
+    font-size: 1.5em;
+}
+
+
+.container {
+    max-width: 2048px;
+    margin: auto;
+}
+
+.ca-wrap {
+    text-align: center;
+    padding: 1em;
+}
+
+.banner-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-wrap p {
+    padding: 1em;
+}
+
+.banner-wrap img {
+    width: 100%;
+    margin: 1em 0;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+.socials a {
+    text-decoration: none;
+    margin-right: 1em;
+    font-size: 2em;
+    color: #eee;
+    cursor: pointer;
+}
+
+.tokenomics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.items {
+    display: flex;
+    margin-top: 1em;
+}
+
+.item {
+    margin-right: 1em;
+}
+
+.image-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    margin-top: 2em;
+    gap: 2em;
+}
+
+.image-content img {
+    width: 50%;
+}
+
+.image-no-content img {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+
+    .ca-wrap,
+    .item,
+    h2,
+    p {
+        color: #000000;
+        font-size: 1.3em;
+    }
+
+
+    .socials a {
+        font-size: 1.5em;
+    }
+
+    .ca-wrap {
+        font-size: .7em;
+    }
+}
